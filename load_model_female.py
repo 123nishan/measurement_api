@@ -57,8 +57,8 @@ def run_model(age, height, weight, shoe_size,hourglass,inverted_triangle,rectang
     unscaled_output=output_scaler.inverse_transform(output.detach().numpy()) #unscale predicted measurement 
 
 
-    outerInseam = np.subtract(unscaled_output[:, 7], unscaled_output[:, 10]) #substracts waist height and ankle height
-    innerInseam = np.subtract(unscaled_output[:, 4], unscaled_output[:, 11]) #substracts crotch height and inner ankle height
+    outerInseam = np.subtract(unscaled_output[:, 8], unscaled_output[:, 11]) #substracts waist height and ankle height
+    innerInseam = np.subtract(unscaled_output[:, 5], unscaled_output[:, 12]) #substracts crotch height and inner ankle height
     unscaled_output = unscaled_output.flatten() #convert 2d array to 1d
     return_dict={}
     for i  in range(len(female_output_list)): #adding to dictonary 
