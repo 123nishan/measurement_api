@@ -52,6 +52,7 @@ Other note
                 "Outer Inseam (inch)": 37.12344913032111,
                 "Inner Inseam (inch)": 27.854820912278544
             }
+        
 
 --------------------For female run---------------------------
    -python main.py "gender" "age" "height in cm" "weight in kg" "european shoe size " "Hourglass shape" "Inverted shape" "Rectangle shape" "Triangle Shape"
