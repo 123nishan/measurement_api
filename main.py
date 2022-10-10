@@ -45,6 +45,7 @@ if __name__ == '__main__':
             shoe_size=shoe_size,
             hourglass=hourglass,
             inverted_triangle=inverted_triangle,
+            rectangle=rectangle,
             triangle=triangle
             )
     print(json_object)
